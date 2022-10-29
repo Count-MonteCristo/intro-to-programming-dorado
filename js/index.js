@@ -79,7 +79,7 @@ messageForm.addEventListener("submit", (e) => {
   messageList.appendChild(newMessage);
 
   //asseses the status of the list
-  if (isEmpty("list") == false) {
+  if (!isEmpty("list")) {
     document.getElementById("messages").style.display = "block";
   }
 
