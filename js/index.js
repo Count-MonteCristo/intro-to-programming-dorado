@@ -70,7 +70,7 @@ messageForm.addEventListener("submit", (e) => {
   removeButton.addEventListener("click", (e) => {
     let entry = newMessage.querySelector("button").parentNode;
     entry.remove();
-    if (isEmpty("list") == true) {
+    if (isEmpty("list")) {
       document.getElementById("messages").style.display = "none";
     }
   });
