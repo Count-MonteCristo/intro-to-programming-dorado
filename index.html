@@ -5,157 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Navarro's Portfolio</title>
-    <meta name="author" content="Luis Navarro">
-    <meta name="description" content="Portfolio website for Luis Navarro">
-    <meta name="keywords" content="Luis Navarro, Portfolio, Personal Website, Web Designer and Developer">
+    <meta name="author" content="Luis Navarro" />
+    <meta name="description" content="Portfolio website for Luis Navarro" />
+    <meta
+      name="keywords"
+      content="Luis Navarro, Portfolio, Personal Website, Web Designer and Developer"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
   </head>
-
   <body>
-    <img src="images/profile-picture.jpg" alt="Luis Navarro" />
-    <h1>Hello there! I am Luis. I help businesses build amazing websites</h1>
+    <div class="container" id="header"></div>
+    <div class="container" id="main">
+      <main>
+        <section id="hero">
+          <h1>Hi, my name is</h1>
+          <h2>Luis Navarro.</h2>
+          <h3>I create exceptional digital experiences.</h3>
+          <p>
+            I'm a web designer and WordPress developer with an engineering and
+            cybersecurity background. I design and build beautiful sites that
+            are minimalist in design with bold elements. Currently, I'm focused
+            on helping local businesses create websites that serve their needs.
+          </p>
+          <!-- I will add my picture back in lesson 4.5 -->
+        </section>
+        <section id="about">
+          <h1>About Me</h1>
+          <p>
+            Hello there! I'm Luis and I am based out of San Antonio, Texas.
+            <br /><br />
+            I hold a B.B.A. in Computer Information Systems from Texas A&M
+            University-San Antonio, in addition to an A.S. in Engineering and an
+            A.A. in Liberal Arts from San Antonio College. I have experience
+            working with small business and higher education institutions.
+            <br /><br />
+            When I am not working, you will find me reading books, attending
+            concerts, going on hikes, and spending time with loved ones.
+          </p>
+          <!-- I will add a graphic here in lesson 4.5 -->
+        </section>
+        <section id="skills">
+          <h1>Skills</h1>
+          <p>
+            To always use the best tools for the job, I am constantly learning
+            and keeping up with the latest technologies.
+          </p>
+          <!-- HTML will be inserted here via JS -->
+          <ul id="skillsList"></ul>
+        </section>
+        <section id="experience">
+          <h1>Where I've Worked</h1>
+          <h2>Emeralt Web Studio</h2>
+          <h3>Owner, Web designer and developer</h3>
+          <h4>May 2022 - Present</h4>
+          <ul>
+            <li>
+              Help clients identify the goals of their website and define the
+              scope of the project
+            </li>
+            <li>
+              Design user-centric interfaces that implement UX/UI solutions
+            </li>
+            <li>
+              Create custom graphics and write meaningful website copy to
+              increase user engagement
+            </li>
+            <li>Develop and manage websites using WordPress</li>
+          </ul>
+          <h2>The Path Blog</h2>
+          <h3>Staff Writer</h3>
+          <h4>October 2022 - Present</h4>
+          <ul>
+            <li>Produce well-researched content for publication online</li>
+            <li>
+              Collaborate with the chief editor to evaluate writing and adjust
+              content as needed
+            </li>
+            <li>
+              Implement search engine optimization (SEO) strategies in writing
+              to improve content's online visibility
+            </li>
+          </ul>
+          <h3>Podcast Co-host</h3>
+          <h4>July 2022 - Present</h4>
+          <ul>
+            <li>
+              Coordinate with the team to develop show run-downs, produce
+              engaging content, and record episodes on a weekly basis
+            </li>
+            <li>
+              Research topics related to The Witcher franchise and deliver
+              unique, passionate, and informed commentary
+            </li>
+          </ul>
+          <h2>Texas A&M University-San Antonio</h2>
+          <h3>Student Fellow</h3>
+          <h4>June 2021 - June 2022</h4>
+          <ul>
+            <li>
+              Collaborated with the university's Student Academic Success Center
+              (SASC) on a project aimed at improving the enrollment experience
+              for incoming students
+            </li>
+            <li>
+              Conducted a series of calls with 60+ students, providing
+              individualized guidance through the enrollment process and
+              financial aid
+            </li>
+            <li>
+              Delivered a welcoming and informative speech at New Student
+              Orientation focused on the student experience on campus and the
+              many resources available
+            </li>
+            <li>
+              Implemented minimalist designs with bold elements into the visual
+              identity of SASC's marketing materials
+            </li>
+            <li>
+              Compiled information beneficial to students throughout the
+              2021-2022 academic year that was included on flyers, brochures,
+              and resource guides
+            </li>
+          </ul>
+          <h2>Maintenance Technician</h2>
+          <h3>Self-employed</h3>
+          <h4>May 2014 - August 2019</h4>
+          <ul>
+            <li>
+              Identified and formulated solutions to perform repairs on
+              mechanical, electrical, and pneumatic components
+            </li>
+            <li>
+              Estimated repair costs and coordinated with outside vendors to
+              ensure cost-effective project completion
+            </li>
+            <li>
+              Scheduled routine systems inspections to verify the proper
+              workings of technical systems
+            </li>
+            <li>
+              Conducted preventive maintenance on existing limousines and luxury
+              buses
+            </li>
+          </ul>
+        </section>
+        <section id="form">
+          <h1>Contact Form</h1>
+          <h2>
+            Whether you have a question or just want to say hi, feel free to
+            leave a message by filling out the form below - I'll try my best to
+            get back to you!
+          </h2>
+          <form name="leave_message">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br />
+            <label for="email">Email Address:</label><br />
+            <input type="email" id="email" name="email" required /><br />
+            <label for="message">Message:</label><br />
+            <textarea name="message" required></textarea><br />
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        <section id="messages">
+          <h1>Messages:</h1>
+          <!-- HTML will be inserted here via JS -->
+          <ul id="list"></ul>
+        </section>
+      </main>
+    </div>
 
-    <section id="about">
-      <h1>About</h1>
-      <p>
-        My name is Luis Navarro. I am a web designer and developer with an
-        engineering and cybersecurity background. I strive to simplify difficult
-        tasks and make complex systems easy to use for everyone. Currently, I
-        focus on building websites with WordPress.
-      </p>
-    </section>
-
-    <section id="experience">
-      <h1>Experience</h1>
-
-      <h2>Emeralt Web Studio</h2>
-      <h3>Owner, Web designer and developer</h3>
-      <ul>
-        <li>
-          Help clients identify the goals of their website and define the scope
-          of the project
-        </li>
-        <li>Design user-centric interfaces that implement UX/UI solutions</li>
-        <li>
-          Create custom graphics and write meaningful website copy to increase
-          user engagement
-        </li>
-        <li>Develop and manage websites using WordPress</li>
-      </ul>
-
-      <h2>The Path Blog</h2>
-      <h3>Staff Writer</h3>
-      <ul>
-        <li>Produce well-researched content for publication online</li>
-        <li>
-          Collaborate with the chief editor to evaluate writing and adjust
-          content as needed
-        </li>
-        <li>
-          Implement search engine optimization (SEO) strategies in writing to
-          improve content's online visibility
-        </li>
-      </ul>
-      <h3>Podcast Co-host</h3>
-      <ul>
-        <li>
-          Coordinate with the team to develop show run-downs, produce engaging
-          content, and record episodes on a weekly basis
-        </li>
-        <li>
-          Research topics related to The Witcher franchise and deliver unique,
-          passionate, and informed commentary
-        </li>
-      </ul>
-
-      <h2>Texas A&M University-San Antonio</h2>
-      <h3>Student Fellow</h3>
-      <ul>
-        <li>
-          Collaborated with the university's Student Academic Success Center
-          (SASC) on a project aimed at improving the enrollment experience for
-          incoming students
-        </li>
-        <li>
-          Conducted a series of calls with 60+ students, providing
-          individualized guidance through the enrollment process and financial
-          aid
-        </li>
-        <li>
-          Delivered a welcoming and informative speech at New Student
-          Orientation focused on the student experience on campus and the many
-          resources available
-        </li>
-        <li>
-          Implemented minimalist designs with bold elements into the visual
-          identity of SASC's marketing materials
-        </li>
-        <li>
-          Compiled information beneficial to students throughout the 2021-2022
-          academic year that was included on flyers, brochures, and resource
-          guides
-        </li>
-      </ul>
-
-      <h2>Maintenance Technician</h2>
-      <h3>Self-employed</h3>
-      <ul>
-        <li>
-          Identified and formulated solutions to perform repairs on mechanical,
-          electrical, and pneumatic components
-        </li>
-        <li>
-          Estimated repair costs and coordinated with outside vendors to ensure
-          cost-effective project completion
-        </li>
-        <li>
-          Scheduled routine systems inspections to verify the proper workings of
-          technical systems
-        </li>
-        <li>
-          Conducted preventive maintenance on existing limousines and luxury
-          buses
-        </li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <!-- HTML will be inserted here via JS -->
-      <ul></ul>
-    </section>
-
-    <section id="connect">
-      <h1>Connect with me!</h1>
-      <ul>
-        <li><a href="mailto:luis0425navarro@gmail.com">Email</a></li>
-        <li><a href="https://github.com/Count-MonteCristo">GitHub</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/luisnavarrobarrera/">LinkedIn</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="form">
-      <h2>Leave a Message</h2>
-      <form name="leave_message">
-        <label for="name">Name:</label><br /><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-        <label for="email">Email Address:</label><br /><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-        <label for="message">Message:</label><br /><br />
-        <textarea name="message" required></textarea><br /><br />
-        <button type="submit">Submit</button><br /><br />
-      </form>
-    </section>
-
-    <section id="messages">
-      <h2>Messages:</h2>
-      <!-- HTML will be inserted here via JS -->
-      <ul></ul>
-    </section>
-
-    <footer></footer>
-
+    <div class="container" id="footer">
+      <footer>
+        <section id="connect">
+          <h1>Connect with me</h1>
+          <ul id="socials">
+            <li class="github">
+              <a href="https://github.com/Count-MonteCristo">GitHub</a>
+            </li>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/luisnavarrobarrera/"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/KaisarionCodes">Twitter</a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
