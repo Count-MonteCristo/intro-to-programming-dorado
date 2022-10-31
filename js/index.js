@@ -5,7 +5,7 @@ let thisYear = today.getFullYear();
 let footer = document.querySelector("footer");
 
 let copyright = document.createElement("p");
-copyright.innerHTML = `Luis Navarro ${thisYear}`;
+copyright.innerHTML = `ⓒ Luis Navarro ${thisYear}`;
 footer.appendChild(copyright);
 
 //creates list of skills

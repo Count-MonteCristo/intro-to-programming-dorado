@@ -3,6 +3,53 @@
   background-color: #0a192f;
 }
 
+body {
+  margin: 24px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 8px;
+  }
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 0 25px 0 black;
+  justify-content: space-between;
+}
+
+header * {
+  display: inline;
+}
+
+header img {
+  height: 80px;
+  padding-left: 40px;
+}
+
+header li {
+  margin: 20px;
+}
+
+#menuItem {
+  color: #ccd6f6;
+}
+
+.topnav a:hover {
+  background-color: #5ae6c8;
+  color: #0a192f;
+  border-radius: 4px;
+}
+
 /* main */
 #main p,
 ul {
@@ -30,13 +77,34 @@ h3 {
 #messages {
   margin: auto;
   width: 80%;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 /* hero section */
+.flex-container-hero {
+  display: flex;
+}
+
+.box-1 {
+  flex: 2;
+}
+
+.box-2 {
+  flex: 1;
+  padding-top: 180px;
+}
+
+.box-2 img {
+  border-radius: 50%;
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 0 10px 0 #5ae6c8;
+}
+
 #hero h1 {
   font-size: 16px;
   color: #5ae6c8;
+  padding-top: 150px;
 }
 
 #hero h2 {
@@ -46,14 +114,19 @@ h3 {
 }
 
 #hero h3 {
-  font-size: 36px;
+  font-size: 32px;
   color: #8892b0;
   margin-top: -50px;
 }
 
 #hero p {
   margin-top: -30px;
-  padding-right: 500px;
+  padding-right: 150px;
+}
+
+/* about section */
+#about p {
+  padding-right: 40px;
 }
 
 /* skills section */
@@ -65,7 +138,11 @@ h3 {
 #skills h1 {
   font-size: 24px;
   color: #8892b0;
-  padding-top: 20px;
+  padding-top: 40px;
+}
+
+#skills p {
+  padding-bottom: 20px;
 }
 
 #skills ul {
@@ -85,6 +162,7 @@ h3 {
   text-align: center;
   padding: 10px 0;
   margin: 5px;
+  box-shadow: 0 0 5px 0 black;
 }
 
 /* experience section */
@@ -138,31 +216,19 @@ ul {
 }
 
 input[type="text"],
-select {
-  margin: auto;
-  width: 50%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #5ae6c8;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #0a192f;
-  color: #ccd6f6;
-}
-
 input[type="email"],
 select {
   margin: auto;
   width: 50%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 15px 0;
   display: inline-block;
   border: 2px solid #5ae6c8;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #0a192f;
   color: #ccd6f6;
+  box-shadow: 0 0 10px 0 black;
 }
 
 textarea {
@@ -177,6 +243,7 @@ textarea {
   background-color: #0a192f;
   color: #ccd6f6;
   margin-top: 10px;
+  box-shadow: 0 0 10px 0 black;
 }
 
 button[type="submit"] {
@@ -188,6 +255,7 @@ button[type="submit"] {
   margin: 20px 2px;
   cursor: pointer;
   border-radius: 30px;
+  box-shadow: 0 0 10px 0 black;
 }
 
 button[type="submit"]:hover {
