@@ -32,16 +32,12 @@ header * {
 }
 
 header img {
-  height: 80px;
-  padding-left: 40px;
+  height: 45px;
+  padding-left: 20px;
 }
 
 header li {
-  margin: 20px;
-}
-
-#menuItem {
-  color: #ccd6f6;
+  padding-right: 20px;
 }
 
 .topnav a:hover {
@@ -72,12 +68,13 @@ h3 {
 /* general sections */
 #hero,
 #about,
+#projects,
 #experience,
 #form,
 #messages {
   margin: auto;
   width: 80%;
-  padding-top: 50px;
+  margin-bottom: -50px;
 }
 
 /* hero section */
@@ -87,6 +84,7 @@ h3 {
 
 .box-1 {
   flex: 2;
+  padding-top: 50px;
 }
 
 .box-2 {
@@ -98,7 +96,7 @@ h3 {
   border-radius: 50%;
   max-width: 80%;
   height: auto;
-  box-shadow: 0 0 10px 0 #5ae6c8;
+  box-shadow: 0 0 10px 0 #ccd6f6;
 }
 
 #hero h1 {
@@ -120,11 +118,16 @@ h3 {
 }
 
 #hero p {
-  margin-top: -30px;
+  
   padding-right: 150px;
 }
 
 /* about section */
+#about h1 {
+  margin-bottom: -2px;
+  padding-top: 100px; 
+}
+
 #about p {
   padding-right: 40px;
 }
@@ -136,9 +139,8 @@ h3 {
 }
 
 #skills h1 {
-  font-size: 24px;
-  color: #8892b0;
-  padding-top: 40px;
+  padding-top: 100px;
+  margin-bottom: -2px;
 }
 
 #skills p {
@@ -165,6 +167,36 @@ h3 {
   box-shadow: 0 0 5px 0 black;
 }
 
+/* projects section */
+#projects h1 {
+  padding-top: 200px;
+  margin-bottom: -2px;
+}
+
+#projects p {
+  padding-bottom: 20px;
+}
+
+#projects ul {
+  list-style: none;
+  margin-left: -40px;
+  display: flex;
+}
+
+#project li {
+  display: inline;
+  width: 120px;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 0;
+  margin: 5px;
+}
+
+#projects li:hover {
+border-bottom: 2px solid #5ae6c8;
+}
+
 /* experience section */
 #experience h2,
 h3 {
@@ -178,8 +210,8 @@ ul {
 }
 
 #experience h1 {
-  margin-bottom: -10px;
-  margin-top: 150px;
+  margin-bottom: -2px;
+  padding-top: 100px;
 }
 
 #experience h2 {
@@ -202,6 +234,10 @@ ul {
 #form h1,
 #form h2 {
   text-align: center;
+}
+
+#form h1 {
+  padding-top: 100px;
 }
 
 #form h2 {
@@ -301,7 +337,7 @@ button[type="submit"]:hover {
   text-align: center;
   font-size: 24px;
   color: #ccd6f6;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 #connect ul {
