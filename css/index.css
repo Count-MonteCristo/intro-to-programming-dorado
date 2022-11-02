@@ -118,14 +118,13 @@ h3 {
 }
 
 #hero p {
-  
   padding-right: 150px;
 }
 
 /* about section */
 #about h1 {
   margin-bottom: -2px;
-  padding-top: 100px; 
+  padding-top: 100px;
 }
 
 #about p {
@@ -194,7 +193,7 @@ h3 {
 }
 
 #projects li:hover {
-border-bottom: 2px solid #5ae6c8;
+  border-bottom: 2px solid #5ae6c8;
 }
 
 /* experience section */
