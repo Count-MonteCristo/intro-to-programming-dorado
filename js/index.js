@@ -87,30 +87,31 @@ messageForm.addEventListener("submit", (e) => {
 });
 
 //fetches GitHub repositories
-let githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/Count-MonteCristo/repos')
-githubRequest.onload = function() {
-  let repositories = JSON.parse(githubRequest.response);
-  console.log(repositories);
-  
-  let projectSection = document.getElementById("projects");
-  let projectList = projectSection.querySelector("ul");
+fetch("https://api.github.com/users/Count-MonteCristo/repos", { mode: "cors" })
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (response) {
+    let projectSection = document.getElementById("projects");
+    let projectList = projectSection.querySelector("ul");
 
-  for (let i = 0; i < repositories.length; i++) {
-    let project = document.createElement("li");
-    project.innerHTML = `<a class="link link--no-decor" href="${repositories[i].html_url}" target="_blank" rel="noopener noreferrer"> ${repositories[i].name} </a>`;
-    projectList.appendChild(project);
-  }
-}
-githubRequest.send();
+    for (let i = 0; i < response.length; i++) {
+      let project = document.createElement("li");
+      project.innerHTML = `<a class="link link--no-decor" href="${response[i].html_url}" target="_blank" rel="noopener noreferrer"> ${response[i].name} </a>`;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
 
 //smooth scrolling animation when using anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
   });
 });
