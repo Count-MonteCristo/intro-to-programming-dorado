@@ -10,22 +10,31 @@ footer.appendChild(copyright);
 
 //creates list of skills
 let skills = [
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
   "JavaScript",
+  "React",
+  "Node.js",
+  "Express.js",
+  "Yarn",
+  "NPM",
+  "Git",
+  "GitHub",
+  "VS Code",
   "C/C++",
   "Java",
   "Python",
   "SQL",
+  "NoSQL",
   "WordPress",
+  "Magento",
+  "HubSpot CMS",
   "Bash",
   "Linux",
+  "Figma",
   "UX/UI",
-  "Sitemaps",
-  "Wireframes",
-  "Mockups",
-  "Prototypes",
-  "Copywriting",
+  "SEO",
+
 ];
 let skillSection = document.getElementById("skills");
 let skillsList = skillSection.querySelector("ul");
